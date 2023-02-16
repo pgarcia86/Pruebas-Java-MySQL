@@ -4,7 +4,14 @@ public class main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Hola java, esto deberia subirse al github");
+		
+		Pago pago1 = new PayPal();
+		Pago pago2 = new TarjetaCredito();
+		Pago pago3 = new Debito();
+		
+		pago1.ejecutarCallback(() -> System.out.println("Devuelvo el control"));
+		pago2.ejecutarCallback(() -> System.out.println("Devuelvo el control"));
+		pago3.ejecutarCallback(() -> System.out.println("Devuelvo el control"));
 	}
 
 }
