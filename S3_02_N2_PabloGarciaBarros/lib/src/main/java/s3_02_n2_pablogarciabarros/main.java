@@ -9,9 +9,9 @@ public class main {
 		Pago pago2 = new TarjetaCredito();
 		Pago pago3 = new Debito();
 		
-		pago1.ejecutarCallback(() -> System.out.println("Devuelvo el control"));
-		pago2.ejecutarCallback(() -> System.out.println("Devuelvo el control"));
-		pago3.ejecutarCallback(() -> System.out.println("Devuelvo el control"));
+		pago1.ejecutarCallback(() -> System.out.println("Vuelve al main\n"));
+		pago2.ejecutarCallback(() -> System.out.println("Vuelve al main\n"));
+		pago3.ejecutarCallback(() -> System.out.println("Vuelve al main\n"));
 	}
 
 }
